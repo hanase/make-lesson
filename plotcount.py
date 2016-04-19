@@ -17,7 +17,7 @@ def plot_word_counts(counts, limit=10):
     word_data = [word for (word, _, _) in limited_counts]
     count_data = [count for (_, count, _) in limited_counts]
     position = np.arange(len(word_data))
-    width = 1.0
+    width = 0.8
     ax = plt.axes()
     ax.set_xticks(position + (width / 2))
     ax.set_xticklabels(word_data)
